@@ -6,8 +6,6 @@ const noppaLuku = (min, max) => {
 
 document.getElementById('kuva').addEventListener('click', () => {
     const noppaluku = noppaLuku(1,6)
-    const kuva = document.getElementById('kuva')
-    const kuvat = '<img src="./img/' + noppaluku + '.png">'
-    kuva.innerHTML  = kuvat
+    document.querySelector('img').src ='./img/' + noppaluku + '.png'
 })
 
